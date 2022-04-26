@@ -41,7 +41,7 @@ function BillForm() {
   );
 }
 
-function Example() {
+function Example(e) {
   const [showForm, setShowForm] = useState(false);
 
   const showFormHandler = () => {
