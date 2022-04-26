@@ -41,12 +41,12 @@ function BillForm() {
   );
 }
 
-function Example(e) {
+function Example() {
   const [showForm, setShowForm] = useState(false);
 
-  const showFormHandler = () => {
+  const showFormHandler = (event) => {
+    event.preventDefault();
     setShowForm(true);
-    e.preventDefault();
     console.log('refresh prevented');
   };
 
