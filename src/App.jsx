@@ -46,6 +46,8 @@ function Example() {
 
   const showFormHandler = () => {
     setShowForm(true);
+    e.preventDefault();
+    console.log('refresh prevented');
   };
 
   return (
@@ -55,7 +57,7 @@ function Example() {
       </form>
 
       {showForm && (
-        <BillForm />
+      <BillForm />
       )}
     </div>
   );
@@ -63,8 +65,8 @@ function Example() {
 
 export default function App() {
   return (
+
     <div>
-      {/* <BillForm /> */}
       <Example />
     </div>
   );
